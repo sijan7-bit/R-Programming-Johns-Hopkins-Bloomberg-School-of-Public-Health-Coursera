@@ -21,7 +21,8 @@ rankhospital <- function(state, outcome, num = "best") {
         ## Validating the num value
         if(num != "best" && num != "worst" && num%%1 != 0) stop("invalid num")
         
-        ## Grab only the rows with matches the reqiured state value    
+        ## Grab only those rows which matches the reqiured state value and 
+        ## whose data is available    
         data <- data[data$state==state & data[outcome] != 'Not Available', ]
         
         ## Ordering the data in ascending order, first according to the names 
