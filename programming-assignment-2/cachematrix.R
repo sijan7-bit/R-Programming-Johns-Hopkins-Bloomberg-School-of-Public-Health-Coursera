@@ -2,14 +2,14 @@
 
 
 ## Creates a special matrix object that can cache its inverse
-makeCacheMatrix <- function( m = matrix() ) {
+makeCacheMatrix <- matrix(c(4,2,1), nrow=2 ) {
 
 	## Initialize the inverse property
     i <- NULL
 
     ## Method to set the matrix
-    set <- function( matrix ) {
-            m <<- matrix
+    set <- function( makeCacheMatrix ) {
+            m <<- makeCacheMatrix
             i <<- NULL
     }
 
